@@ -1,4 +1,4 @@
-package leetcode.leetcode_496;
+package leetcode_496;
 
 /**
  * @author Ji YongGuang.

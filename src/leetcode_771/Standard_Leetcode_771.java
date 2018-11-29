@@ -1,4 +1,4 @@
-package leetcode.leetcode_771;
+package Array.leetcode_771;
 
 /**
  * @author Ji YongGuang.

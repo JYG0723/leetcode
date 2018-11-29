@@ -1,4 +1,4 @@
-package leetcode.leetcode_350;
+package leetcode_350;
 
 import java.util.ArrayList;
 import java.util.Map;

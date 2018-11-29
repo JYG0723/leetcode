@@ -1,8 +1,4 @@
-package leetcode.leetcode_347;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.TreeMap;
+package Array.leetcode_347;
 
 /**
  * @author Ji YongGuang.

@@ -1,4 +1,4 @@
-package leetcode.leetcode_203.leetcode_203_first;
+package leetcode_203.leetcode_203_first;
 
 /**
  * @author Ji YongGuang.

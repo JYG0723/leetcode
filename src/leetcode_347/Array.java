@@ -1,4 +1,4 @@
-package leetcode.leetcode_347;
+package leetcode_347;
 
 /**
  * @author Ji YongGuang.

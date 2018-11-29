@@ -1,4 +1,4 @@
-package leetcode.leetcode_804;
+package leetcode_804;
 
 import java.util.Set;
 import java.util.TreeSet;
