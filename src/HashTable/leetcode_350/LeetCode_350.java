@@ -1,8 +1,6 @@
-package leetcode_350;
+package HashTable.leetcode_350;
 
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * @author Ji YongGuang.
@@ -13,7 +11,6 @@ public class LeetCode_350 {
 
     class Solution {
         public int[] intersect(int[] nums1, int[] nums2) {
-
             Map<Integer, Integer> nums1Map = new TreeMap<>();
 
             for (int i = 0; i < nums1.length; i++) {

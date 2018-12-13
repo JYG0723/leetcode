@@ -1,4 +1,4 @@
-package leetcode_347;
+package Heap.leetcode_347;
 
 /**
  * @author Ji YongGuang.

@@ -1,4 +1,4 @@
-package leetcode_349;
+package HashTable.leetcode_349;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -8,6 +8,9 @@ import java.util.TreeSet;
  * @author Ji YongGuang.
  * @date 7:46 2018/4/27.
  * 两个数组的交集 I
+ *
+ * 看不懂的解：
+ * https://leetcode.com/problems/intersection-of-two-arrays/discuss/196602/JAVA%3A-the-clearest-solution
  */
 public class LeetCode_349 {
 
@@ -15,7 +18,6 @@ public class LeetCode_349 {
         public int[] intersection(int[] nums1, int[] nums2) {
 
             Set<Integer> nunm1Set = new TreeSet<>();
-
             for (int i : nums1) {
                 nunm1Set.add(i);
             }

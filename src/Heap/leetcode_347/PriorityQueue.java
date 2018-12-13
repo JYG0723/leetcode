@@ -1,11 +1,10 @@
-package leetcode_347;
+package Heap.leetcode_347;
 
 /**
  * @author Ji YongGuang.
  * @date 19:50 2018/4/27.
  * 基于最大堆实现的优先队列
  */
-/*
 public class PriorityQueue<E extends Comparable<E>> implements Queue<E> {
 
     private MaxHeap<E> maxHeap;
@@ -39,4 +38,3 @@ public class PriorityQueue<E extends Comparable<E>> implements Queue<E> {
         return maxHeap.findMax();
     }
 }
-*/
