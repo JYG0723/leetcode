@@ -25,9 +25,12 @@ public class BubbleSort {
                 if (arr[j] > arr[j + 1]) {
                     flag = true;
                     // 不介入第三个变量交换两元素
-                    arr[j] = arr[j] + arr[j + 1];
+                    /*arr[j] = arr[j] + arr[j + 1];
                     arr[j + 1] = arr[j] - arr[j + 1];
-                    arr[j] = arr[j] - arr[j + 1];
+                    arr[j] = arr[j] - arr[j + 1];*/
+                    arr[j] = arr[j] ^ arr[j + 1];
+                    arr[j + 1] = arr[j] ^ arr[j + 1];
+                    arr[j] = arr[j] ^ arr[j + 1];
                 }
             }
 
