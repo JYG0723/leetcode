@@ -5,7 +5,7 @@ package Sort;
  * @date 15:52 2018/12/14.
  * @description
  */
-public class Main {
+public class ExclusiveOrTest {
     public static void main(String[] args) {
         int i = 6;
         int j = 7;
