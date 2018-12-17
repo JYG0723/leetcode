@@ -28,4 +28,16 @@ public class InsertionSort {
         }
         return arr;
     }
+
+    public static void main(String[] args) {
+        int[] arr = new int[]{3, 5, 4, 1, 2, 6};
+        int[] resArr = insertionSort(arr);
+        StringBuilder sb = new StringBuilder("[");
+        for (int item : resArr) {
+            sb.append(item);
+            sb.append(",");
+        }
+        sb.append("]");
+        System.out.println(sb.toString());
+    }
 }

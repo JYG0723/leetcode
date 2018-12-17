@@ -35,7 +35,7 @@ public class BubbleSort {
             }
 
             if (!flag) {
-                System.out.println(count);
+                System.out.println(count);// 单纯统计下次数
                 return arr;
             }
         }
