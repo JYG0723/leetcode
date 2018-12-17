@@ -13,7 +13,7 @@ public class BubbleSort {
     private static int[] bubbleSort(int[] arr) {
 
         int len = arr.length;
-        if (len == 1)
+        if (len <= 1)
             return arr;
 
         int count = 0;
