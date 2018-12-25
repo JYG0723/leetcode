@@ -39,7 +39,8 @@ public class QuickSort {
             if (i < j)
                 arr[j--] = arr[i];
         }
-        // 上序遍历完，i = j 但是数组会空出一个位置。空出的位置填上中间元素index
+        // 上序遍历完，i = j 但是数组会空出一个位置。空出的位置填上中间元素index。
+        // 上序一次排序完，index即就确定了是该数组的第i+1大的元素。
         arr[i] = index;
         quickSort(arr, start, i - 1);// 对低子表进行递归排序
         quickSort(arr, i + 1, end);// 对高子表进行递归排序

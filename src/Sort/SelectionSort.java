@@ -3,7 +3,7 @@ package Sort;
 /**
  * @author Ji YongGuang.
  * @date 12:58 2018/12/17.
- * @description 选择排序
+ * @description 选择排序 即每次遍历选出最大或最小的一个元素。共遍历n-1次
  */
 public class SelectionSort {
 

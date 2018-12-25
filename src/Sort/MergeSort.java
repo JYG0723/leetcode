@@ -33,7 +33,6 @@ public class MergeSort {
         mergeSort(a, mid + 1, high);// 1 1
         // 左右归并
         merge(a, low, mid, high);
-        System.out.printf("归并结果: %s\n", Arrays.toString(a));
     }
 
     /**
