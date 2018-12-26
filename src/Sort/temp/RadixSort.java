@@ -13,7 +13,7 @@ public class RadixSort {
     private static void radixSort(int[] a) {
         int max = getMax(a);
 
-        for (int i = 1; max / i > 0; i *= 10) {
+        for (int i = 1; max / i > 0; i *= 10) {// i控制的是 此次排序比较的位
             sort(a, i);
         }
     }

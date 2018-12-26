@@ -15,7 +15,6 @@ public class HeapSort {
             return;
 
         for (int i = len / 2 - 1; i >= 0; i--)// 构建堆，从最后一个父节点开始
-            // 最大元素的下标获取可以截止到数组最后一个元素
             adjustHeap(arr, i, len - 1);
 
         for (int i = len - 1; i >= 0; i--) {// 交换头尾元素
@@ -27,6 +26,11 @@ public class HeapSort {
         }
     }
 
+    /**
+     * @param arr
+     * @param start 待排序数组arr要构建堆的起始位置。
+     * @param size  待排序数组arr要构建堆，孩子节点可以取到的最大的数组下标
+     */
     private static void adjustHeap(int[] arr, int start, int size) {
         int temp = arr[start];
         for (int i = start * 2 + 1; i <= size; start = i, i = i * 2 + 1) {// 从左孩子开始比较

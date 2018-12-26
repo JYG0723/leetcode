@@ -26,7 +26,7 @@ public class MergeSort {
      * @param end   数组归并排序的末尾位置
      */
     private static void mergeSort(int[] arr, int start, int end) {
-        if (start == end)
+        if (start >= end)
             return;
 
         int mid = (start + end) / 2;
@@ -53,8 +53,8 @@ public class MergeSort {
         int j = mid + 1;
         int index = 0;
 
-        while (i <= mid && j <= end) {// 前数组[start,,,mid] 后数组[mid+1,,,end] 进行填充
-            if (arr[i] < arr[j])
+        while (i <= mid && j <= end) {
+            if (arr[i] < arr[j])// 两个序列谁小谁先进备用数组
                 temp[index++] = arr[i++];
             else
                 temp[index++] = arr[j++];

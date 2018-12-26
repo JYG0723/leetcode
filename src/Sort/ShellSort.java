@@ -16,7 +16,7 @@ public class ShellSort {
             return;
 
         for (int step = len / 2; step > 0; step /= 2)
-            for (int i = step; i < len; i++) {
+            for (int i = step; i < len; i++) {// 待排序序列
                 int j = i - step;
                 int temp = arr[i];
 

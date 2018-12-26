@@ -13,12 +13,17 @@ public class QuickSort {
         quickSort(arr, 0, arr.length - 1);
     }
 
+    /**
+     * @param arr   待排序数组
+     * @param start 待排序数组arr的元素比较的起始位置，数组下标
+     * @param end   待排序数组arr的元素比较的终点位置，数组下标
+     */
     private static void quickSort(int[] arr, int start, int end) {
         if (start >= end)
             return;
 
         int i = start, j = end;
-        int mid = arr[i];
+        int mid = arr[i];// 待排序数组的首位置
         while (i < j) {
             while (i < j && arr[j] >= mid) {// 找后半数组小于mid的元素的数组下标
                 j--;

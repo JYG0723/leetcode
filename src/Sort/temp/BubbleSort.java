@@ -1,5 +1,7 @@
 package Sort.temp;
 
+import java.util.Arrays;
+
 /**
  * @author Ji YongGuang.
  * @date 16:14 2018/12/17.
@@ -7,13 +9,13 @@ package Sort.temp;
  */
 public class BubbleSort {
 
-    private static int[] bubbleSort(int[] arr) {
+    private static void bubbleSort(int[] arr) {
         int len = arr.length;
         if (len <= 1) {
-            return arr;
+            return;
         }
 
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len - 1; i++) {
             boolean flag = false;
 
             for (int j = 0; j < len - i - 1; j++) {// -1即arr[len]取不到，且arr[len-2]就已经和arr[len-1]比较了
@@ -26,21 +28,15 @@ public class BubbleSort {
             }
 
             if (!flag) {
-                return arr;
+                return;
             }
         }
-        return arr;
+        return;
     }
 
     public static void main(String[] args) {
         int[] arr = new int[]{3, 5, 4, 1, 2, 6};
-        int[] resArr = bubbleSort(arr);
-        StringBuilder sb = new StringBuilder("[");
-        for (int item : resArr) {
-            sb.append(item);
-            sb.append(",");
-        }
-        sb.append("]");
-        System.out.println(sb.toString());
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }

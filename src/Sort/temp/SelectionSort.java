@@ -1,5 +1,7 @@
 package Sort.temp;
 
+import java.util.Arrays;
+
 /**
  * @author Ji YongGuang.
  * @date 17:13 2018/12/17.
@@ -7,10 +9,10 @@ package Sort.temp;
  */
 public class SelectionSort {
 
-    private static int[] selectionSort(int[] arr) {
+    private static void selectionSort(int[] arr) {
         int len = arr.length;
         if (len <= 1) {
-            return arr;
+            return;
         }
 
         for (int i = 0; i < len - 1; i++) {// 最后一个元素不需要再比较
@@ -26,18 +28,12 @@ public class SelectionSort {
             arr[len - i - 1] = arr[soldier];
             arr[soldier] = temp;
         }
-        return arr;
+        return;
     }
 
     public static void main(String[] args) {
         int[] arr = new int[]{3, 5, 4, 1, 2, 6};
-        int[] resArr = selectionSort(arr);
-        StringBuilder sb = new StringBuilder("[");
-        for (int item : resArr) {
-            sb.append(item);
-            sb.append(",");
-        }
-        sb.append("]");
-        System.out.println(sb.toString());
+        selectionSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }

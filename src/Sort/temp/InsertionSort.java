@@ -1,5 +1,7 @@
 package Sort.temp;
 
+import java.util.Arrays;
+
 /**
  * @author Ji YongGuang.
  * @date 16:29 2018/12/17.
@@ -7,10 +9,10 @@ package Sort.temp;
  */
 public class InsertionSort {
 
-    private static int[] inertionSort(int[] arr) {
+    private static void inertionSort(int[] arr) {
         int len = arr.length;
         if (len <= 1) {
-            return arr;
+            return;
         }
 
         for (int i = 1; i < len; i++) {// 逐步递增向 前面的有序数列添加元素
@@ -24,18 +26,12 @@ public class InsertionSort {
             }
             arr[j + 1] = temp;
         }
-        return arr;
+        return;
     }
 
     public static void main(String[] args) {
         int[] arr = new int[]{3, 5, 4, 1, 2, 6};
-        int[] resArr = inertionSort(arr);
-        StringBuilder sb = new StringBuilder("[");
-        for (int item : resArr) {
-            sb.append(item);
-            sb.append(",");
-        }
-        sb.append("]");
-        System.out.println(sb.toString());
+        inertionSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
