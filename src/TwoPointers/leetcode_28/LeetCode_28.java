@@ -11,7 +11,7 @@ public class LeetCode_28 {
             for (int i = 0; ; i++) {// haystack
                 for (int j = 0; ; j++) {// needle
                     if (j == needle.length()) return i;// needle最后一个元素比完了，i没有被换即结果找到
-                    if (i + j == haystack.length()) return -1;// haystack最后一个元素比完了，j还没被换即结果没找到
+                    if (i + j == haystack.length()) return -1;// haystack最后一个元素比完了，j还没到最后一个元素即结果没找到
                     if (haystack.charAt(i + j) != needle.charAt(j)) break;// 换i
                 }
             }
