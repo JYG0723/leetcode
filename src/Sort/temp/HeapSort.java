@@ -5,7 +5,8 @@ import java.util.Arrays;
 /**
  * @author Ji YongGuang.
  * @date 23:53 2018/12/25.
- * @description 堆排序
+ * @description 堆排序 不稳定的排序算法。
+ * https://blog.csdn.net/qianqin_2014/article/details/52077748
  */
 public class HeapSort {
 

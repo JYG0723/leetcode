@@ -13,8 +13,7 @@ public class LeetCode_27_2 {
         int correct = 0;
         for (int i = 0; i < len; i++) {
             if (nums[i] != val) {// 筛选出正确元素
-                nums[correct] = nums[i];
-                correct++;
+                nums[correct++] = nums[i];
             }
         }
 
