@@ -1,4 +1,4 @@
-package Array.leetcode_1;
+package HashTable.leetcode_1;
 
 /**
  * @author Ji YongGuang.
