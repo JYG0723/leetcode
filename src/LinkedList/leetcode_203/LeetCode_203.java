@@ -25,18 +25,18 @@ public class LeetCode_203 {
                 remNode.next = null;
             }
 
-            ListNode prevNode = head;
-            if (head == null) {
+            ListNode curNode = head;
+            if (head == null) {// 必须有这步进行检测，否则后面while循环curNode.next会报空指针
                 return null;
             }
 
-            while (prevNode.next != null) {
-                if (prevNode.next.val == val) {
-                    remNode = prevNode.next;
-                    prevNode.next = remNode.next;
+            while (curNode.next != null) {
+                if (curNode.next.val == val) {
+                    remNode = curNode.next;
+                    curNode.next = remNode.next;
                     remNode.next = null;
                 } else {
-                    prevNode = prevNode.next;
+                    curNode = curNode.next;
                 }
             }
 
