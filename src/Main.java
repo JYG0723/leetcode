@@ -1,41 +1,36 @@
+import java.util.*;
+
 public class Main {
 
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
-
-    /**
-     * 通过数组创建链表
-     */
-    private static ListNode createdLinkedList(int[] arr) {
-        if (arr.length == 0)
-            return null;
-
-        ListNode head = new ListNode(arr[0]);
-        ListNode cur = head;
-        for (int i = 1; i < arr.length; i++) {
-            cur.next = new ListNode(arr[i]);
-            cur = cur.next;
-        }
-
-        return head;
-    }
-
-    private static void soutLinkedList(ListNode head) {
-        ListNode cur = head;
-        while (cur != null) {
-            System.out.printf("%d -> ", cur.val);
-        }
-        System.out.printf("NULL");
-    }
-
     public static void main(String[] args) {
-        System.out.println(0x10-0x09);
+        // 默认的PriorityQueue, 底层是最小堆
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+
+        for(int i = 0 ; i < 10 ; i ++){
+            int num = (int)(Math.random() * 100);
+            pq.add(num);
+            System.out.println("insert " + num + " in priority queue.");
+        }
+
+        while (!pq.isEmpty())
+            System.out.print(pq.poll() + " ");
+
+        System.out.println();
+        System.out.println();
+
+        // 使用lambda表达式，创建底层是最大堆的PriorityQueue
+        PriorityQueue<Integer> pq2 = new PriorityQueue<Integer>(10, (a, b) -> b - a);
+
+        for(int i = 0 ; i < 10 ; i ++){
+            int num = (int)(Math.random() * 100);
+            pq2.add(num);
+            System.out.println("insert " + num + " in priority queue.");
+        }
+
+        while (!pq2.isEmpty())
+            System.out.print(pq2.poll() + " ");
+
+        System.out.println();
+        System.out.println();
     }
 }

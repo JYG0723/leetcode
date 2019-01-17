@@ -1,7 +1,5 @@
 package Heap.leetcode_215;
 
-import Heap.leetcode_347.Array;
-
 /**
  * @author Ji YongGuang.
  * @date 17:32 2019/1/8.
